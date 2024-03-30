@@ -1,0 +1,17 @@
+[package]
+name = "wayland-copy-capture-test-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wayland-client = "0.31.2"
+wayland-protocols = { version = "0.32.4", features = ["client", "unstable", "staging"] }
+wayland-backend = { version = "0.3.3", features = ["client_system"]}
+wayland-scanner = "0.31.1"
+memfile = "0.3.2"
+indexmap = "2.6.0"
+clap = { version = "4.5.20", features = ["derive"] }
+gbm = "0.16.0"
+drm = "0.14.0"
+bytemuck = "1.18.0"
+libc = "0.2.159"
